@@ -2,6 +2,7 @@
 
 Essa é a minha solução para o desafio [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl)
 
+
 ### O desafio
 
 O usuário deve ser capaz de:
@@ -10,15 +11,15 @@ O usuário deve ser capaz de:
 - Ver a mudança do layout com base na pseudo-classe :hover e :focus
 - Alternar o menu mobile com o método toggle().
 
+
 ### Minha Solução - Screenshot
-
-![1](./assets/images/versao-mobile-1.png)
-![2](./images/versao-desktop-1.png)
-
+<p align="center">
+<img src="./assets/images/versao-desktop-1.png" alt="versao desktop do site" width="100%">
+</p>
 
 ### Links
 - Solução que eu postei no Frontend Mentor: [@ValeItalo]()
-- Meu site: []()
+- Meu site: [https://pagina-noticias.netlify.app/](https://pagina-noticias.netlify.app/)
 
 
 ### Criação
@@ -40,6 +41,7 @@ Por meio de algumas pesquisas eu aprendi a utilizar no JavaScript o método wind
 ```
 window.matchMedia("(min-width: 65em)").matches
 ```
+
 
 ## Autor
 
