@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* typography */
+h1 {
+    color: var(--Very-dark-blue);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+
+h3,
+h4 {
+    letter-spacing: 2px;
+}
+
+p {
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    font-size: clamp(1rem, .75rem + .5rem, 1.3em);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+header,
+.main-text,
+.read-more-link,
+.ranking-container,
+.ranking-text {
+    display: flex;
+}
+
+header {
+    margin-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    max-width: 55em;
+    margin-inline: auto;
+    padding: 1em;
+}
+
+/* navigation */
+nav {
+    display: none;
+}
+
+.menu-top-ul {
+    list-style: none;
+    text-align: right;
+}
+
+.nav-active {
+    position: absolute;
+    top: 3.85em;
+    right: 0;
+    padding-left: .5em;
+    min-width: 15%;
+    background: var(--Off-white);
+    min-height: 100vh;
+    box-shadow: -17px 0 var(--Very-dark-blue);
+}
+
+.menu-top-ul li {
+    margin-bottom: 2em;
+    font-size: 1.4rem;
+}
+
+.menu-top-ul li:hover,
+.menu-top-ul li:focus {
+    color: var(--Soft-orange);
+}
+
+.menu-top-ul li:nth-child(1) {
+    color: var(--Soft-orange);
+    text-decoration: underline 5px var(--Soft-orange);
+}
+
+.hero-image-container img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 0 2em 0 2em;
+    margin-bottom: 2em;
+}
+
+.main-text {
+    flex-direction: column;
+    color: var(--Dark-grayish-blue);
+}
+
+.read-more-link,
+.news-container-section,
+.ranking-text,
+.ranking-description {
+    color: var(--Off-white);
+}
+
+/* read more button*/
+.read-more-link {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    text-align: center;
+    padding: 1em 2.5em;
+    background: var(--Soft-red);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-right: auto;
+    border-radius: 2em;
+}
+
+.read-more-link:hover,
+.read-more-link:focus {
+    background: var(--Very-dark-blue);
+}
+
+.news-container {
+    background: var(--Very-dark-blue);
+    padding: 2em;
+    margin-bottom: 4em;
+    border-radius: 2em 0 2em 0;
+}
+
+.news-container-title {
+    color: var(--Soft-orange);
+    font-size: clamp(1.2rem, 1.5rem + 2vw, 2rem);
+    margin-bottom: 1em;
+}
+
+.news-container-section {
+    font-size: clamp(1rem, 1.1rem, 2.5rem);
+    border-bottom: 2px solid var(--Off-white);
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.news-container-section:last-child {
+    border: 0;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.news-container-subtitle {
+    font-size: clamp(1.1rem, 1rem + .9vw, 1.5rem);
+    margin-bottom: .5em;
+}
+
+.news-container-subtitle:hover,
+.news-container-subtitle:focus {
+    color: var(--Soft-orange);
+}
+
+.ranking-container {
+    margin-bottom: 2em;
+}
+
+.ranking-text {
+    margin-inline: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ranking-number {
+    color: var(--Soft-orange);
+    font-size: clamp(2rem, 1rem + 3vw, 5rem);
+    font-weight: 800;
+}
+
+.ranking-title {
+    font-size: clamp(1.2rem, 1rem + .75vw, 2rem);
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.ranking-title:hover,
+.ranking-title:focus {
+    color: var(--Soft-red);
+}
+
+.attribution {
+    text-align: center;
+}
+
+.ranking-container {
+    padding: 1em;
+    background-color: var(--Dark-grayish-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.ranking-container:nth-child(1) {
+    background-image: url("./assets/images/image-retro-pcs.jpg");
+    border-radius: 2em 0;
+}
+
+.ranking-container:nth-child(2) {
+    background-image: url("./assets/images/image-top-laptops.jpg");
+    border-radius: 0 0 2em 2em;
+}
+
+.ranking-container:nth-child(3) {
+    background-image: url("./assets/images/image-gaming-growth.jpg");
+    border-radius: 0 2em;
+}
+
+@media(min-width: 65em) {
+    p {
+        line-height: 1.6;
+    }
+
+    .container {
+        min-width: 45em;
+        max-width: 100em;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .menu-top-ul li {
+        position: relative;
+    }
+
+    .menu-top-ul {
+        display: flex;
+        list-style: none;
+        gap: 3em;
+    }
+
+    .menu-top-ul li {
+        font-size: clamp(1.1em, 1.1em + .4vw, 1.5em);
+    }
+
+    .menu-nav-img {
+        display: none;
+    }
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 4em;
+        justify-content: flex-start;
+    }
+
+    .news-container-title {
+        margin-bottom: .5em;
+    }
+
+    .news-container-section {
+        margin-block: 1.5em;
+    }
+
+    .desktop-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ranking-container {
+        background-color: var(--Dark-grayish-blue);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        gap: 15px;
+    }
+
+    .ranking-container:nth-child(1) {
+        background-image: url("./assets/images/image-retro-pcs.jpg");
+        margin-right: 1em;
+    }
+
+    .ranking-container:nth-child(2) {
+        background-image: url("./assets/images/image-top-laptops.jpg");
+        margin-right: 1em;
+    }
+
+    .ranking-container:nth-child(3) {
+        background-image: url("./assets/images/image-gaming-growth.jpg");
+    }
+
+    .ranking-text {
+        margin-inline: 10px;
+    }
+
+    .ranking-number {
+        font-size: clamp(2rem, 1rem + 1vw, 2rem);
+    }
+
+    .ranking-description {
+        font-size: clamp(1rem, 1rem + .5vw, 1.4rem);
+    }
+
+    .grid-col-span-3 {
+        grid-column: 1 / -1;
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .grid-col-span-1 {
+        grid-column: 3;
+    }
+}
