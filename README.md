@@ -14,7 +14,7 @@ O usuário deve ser capaz de:
 
 ### Minha Solução - Screenshot
 <p align="center">
-<img src="./assets/images/versao-desktop-2.png" alt="versao desktop do site" width="100%">
+<img src="./assets/images/versao-desktop-3.png" alt="versao desktop do site" width="100%">
 </p>
 
 ### Links
